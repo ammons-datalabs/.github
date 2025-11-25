@@ -23,6 +23,21 @@ This repo is a concrete example of an end-to-end Azure app that mixes AI, integr
 
 ---
 
+### [ADL Document Summarization Service](https://github.com/ammons-datalabs/adl-docs-service)
+
+A modern .NET 8 backend for document summarisation using Azure OpenAI, built with production patterns:
+
+- **Minimal APIs** with clean separation of concerns
+- **Azure OpenAI** client (typed options + DI + retry-safe integration)
+- **Middleware** for error translation and structured logging
+- **xUnit** test suite covering service, endpoints, and failure modes
+- **Infrastructure-as-Code (Bicep)** for App Service, Key Vault, and AOAI (in progress)
+- **GitHub Actions CI** for build + test automation
+
+A concise example of how I design production-ready Azure APIs in C#/.NET.
+
+---
+
 ### [Observable Agent Starter](https://github.com/ammons-datalabs/observable-agent-starter)
 
 A production-ready template for building **observable AI agents**:
