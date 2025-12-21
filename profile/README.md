@@ -22,12 +22,12 @@ A compact evidence-ingestion pipeline for research PDFs:
 
 ## Other Projects
 
-Selected projects covering agent observability, .NET services, automation, and domain prototypes:
+Reference implementations covering agent observability, .NET services, automation, and domain prototypes (some may not be under active development):
 
 - [Observable Agent Starter](https://github.com/ammons-datalabs/observable-agent-starter) — observable agent template (DSPy, Langfuse, DeepEval, CI)
 - [ADL Document Summarization Service](https://github.com/ammons-datalabs/adl-docs-service) — .NET backend patterns for document summarisation
 - [ADL M365 Automation Starter](https://github.com/ammons-datalabs/adl-m365-automation-starter) — invoice automation starter (AI + workflows + CI/CD)
-- [adl-ba-screening](https://github.com/ammons-datalabs/adl-ba-screening) — GIS-backed due-diligence service (spatial lookups, flood overlays, parcel metrics, geocoding) for property screening
+- [adl-ba-screening](https://github.com/ammons-datalabs/adl-ba-screening) — GIS-backed property screening service (flood overlays, parcel metrics, geocoding)
 - [HoldThatThread](https://github.com/ammons-datalabs/HoldThatThread) — .NET reasoning API experiment (streaming, clean architecture, tests)
 - [RoleSkills](https://github.com/ammons-datalabs/RoleSkills) — skill evidence extraction and scoring from repos and role specs
 ---
