@@ -1,39 +1,43 @@
 # Ammons Data Labs
 
-Ammons Data Labs builds pragmatic, production-style systems that bridge applied AI, data engineering, and cloud architecture.
-
-Current focus: **PhD Corpus Ingestion & Search** — a compact pipeline for extracting, enriching, indexing, and querying a research PDF corpus.
+Small, working tools for keeping research and working knowledge searchable: ingestion, indexing,
+retrieval, and the context an LLM works from.
 
 ---
 
-## Current Focus
+## Current
+
+### [context-collector](https://github.com/ammons-datalabs/adl-context-collector)
+
+A personal MCP server that gives any MCP-compatible LLM client persistent, portable memory.
+
+- Semantic search over captured notes, decisions and documents (PostgreSQL + pgvector)
+- Structured facts with temporal tracking: an update keeps the earlier value, readable as of a past date
+- Ingestion of Markdown, PDF, plain text and GitHub issues
+- Identifier-aware search, so a query for PR 204 finds PR 204 rather than PR 267
+- Separate vaults (for example, work and personal) on one installation
+- Fully local operation with Ollama, so no data leaves the machine
+
+Start from the [adl-context-vault](https://github.com/ammons-datalabs/adl-context-vault) template.
 
 ### [PhD Corpus Ingestion & Search](https://github.com/ammons-datalabs/adl-pdf-ingest-phd)
 
-A compact evidence-ingestion pipeline for research PDFs:
-
-- PDF text extraction and cleaning
-- Metadata enrichment and normalisation
-- Database-backed processing state and repeatable runs
-- Full-text indexing for search
-- Tests and modular design for extending with APIs, queues, or workers
+A compact ingestion pipeline for a research PDF corpus: text extraction and cleaning, metadata
+enrichment, repeatable database-backed runs, and full-text search.
 
 ---
 
-## Other Projects
+## Earlier work
 
-Reference implementations covering agent observability, .NET services, automation, and domain prototypes (some may not be under active development):
+Reference implementations from 2025, not under active development:
 
-- [Observable Agent Starter](https://github.com/ammons-datalabs/observable-agent-starter) — observable agent template (DSPy, Langfuse, DeepEval, CI)
-- [ADL Document Summarization Service](https://github.com/ammons-datalabs/adl-docs-service) — .NET backend patterns for document summarisation
-- [ADL M365 Automation Starter](https://github.com/ammons-datalabs/adl-m365-automation-starter) — invoice automation starter (AI + workflows + CI/CD)
-- [adl-ba-screening](https://github.com/ammons-datalabs/adl-ba-screening) — GIS-backed property screening service (flood overlays, parcel metrics, geocoding)
-- [HoldThatThread](https://github.com/ammons-datalabs/HoldThatThread) — .NET reasoning API experiment (streaming, clean architecture, tests)
-- [RoleSkills](https://github.com/ammons-datalabs/RoleSkills) — skill evidence extraction and scoring from repos and role specs
----
+- [Observable Agent Starter](https://github.com/ammons-datalabs/observable-agent-starter): agent template with tracing and evaluation in CI (DSPy, Langfuse, DeepEval)
+- [RoleSkills](https://github.com/ammons-datalabs/RoleSkills): skill evidence extraction and scoring from repos and role specs
+- [adl-docs-service](https://github.com/ammons-datalabs/adl-docs-service): .NET 8 document summarisation backend
+- [HoldThatThread](https://github.com/ammons-datalabs/HoldThatThread): .NET 9 streaming reasoning API
+- [ADL M365 Automation Starter](https://github.com/ammons-datalabs/adl-m365-automation-starter): invoice automation with Azure and Teams
+- [adl-ba-screening](https://github.com/ammons-datalabs/adl-ba-screening): GIS property screening service (flood overlays, parcel metrics)
 
-## Archived Research
+## Archived research
 
-These repositories are kept for reproducibility and reference and are not under active development.
-
-- [Evaluate-SCAIL](https://github.com/ammons-datalabs/Evaluate-SCAIL) — encrypted deduplication research codebase (SCAIL/P-SCAIL experiments)
+- [Evaluate-SCAIL](https://github.com/ammons-datalabs/Evaluate-SCAIL): petabyte-scale encrypted deduplication with segment chunks and sorted indexing (PhD codebase, kept for reproducibility)
